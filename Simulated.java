@@ -26,7 +26,7 @@ public class Simulated {
         //t,p,d의 관계를 정리한 식은  p = e^-d/t
 
         for(int i =0; i < range; i++) {
-            int kt = (int)t; //kt 는 tdp 따른 for문 실행 횟수라고 함
+            int kt = (int)t; //kt 는 t에 따른 for문 실행 횟수라고 함
             for(int j = 0; j < kt; j++) {
                 double next = random.nextDouble()*(maximum-minimum)+minimum; //정해진 범위 내에서 랜덤으로 이웃값을 구함
                 double f1 = sp.fitValue(next); //f1 = f(next)값
