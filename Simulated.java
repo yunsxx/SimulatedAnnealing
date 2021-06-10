@@ -40,7 +40,7 @@ public class Simulated {
                     double d = Math.sqrt(Math.abs(f1-f)); //double q = random.nextDouble(); double d = f1-f;
                     double p = Math.exp(-d/t); // p = e^(-d/t)
 
-                    if(random.nextDouble() < 0.0001) { //random.nextDouble() < 0.0001
+                    if(random.nextDouble() < 0.0001) { //q < p
                         init = next;
                         f = f1; //계속해서 x의 값과 그에 따른 함수값을 갱신
                         y.add(f); //함수값을 list에 저장
